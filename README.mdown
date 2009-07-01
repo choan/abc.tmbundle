@@ -2,22 +2,11 @@
 
 Some commands to work on [ABC][1] files with TextMate.
 
-You'll need to have abcm2ps and ghostscript installed.
+You'll need to have [abcm2ps][2] and [ghostscript][3] installed.
 
-I don't use ABC anymore, so... fork and complete!
+[1]: http://abcnotation.com/
+[2]: http://moinejf.free.fr/
+[3]: http://pages.cs.wisc.edu/~ghost/
 
-# License
 
-               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-                       Version 2, December 2004 
-
-    Copyright (C) 2009 Choan Gálvez 
-
-    Everyone is permitted to copy and distribute verbatim or modified 
-    copies of this license document, and changing it is allowed as long 
-    as the name is changed. 
-
-               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-      TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
-
-     0. You just DO WHAT THE FUCK YOU WANT TO.
+**Important:** I don't use ABC anymore, so... fork and complete!
