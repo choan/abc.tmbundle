@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>require_cmd abcm2ps
+require_cmd gs
+TMP_FILE="${TMPDIR}"abc_bundle_temp.abc
+cat &gt; $TMP_FILE
+F=`echo $TM_FILEPATH | tr " " _`
+OUT="${TMPDIR}""`basename $F .abc`_temp"
+PS_OUT="${OUT}"".ps"
+PDF_OUT="${OUT}"".pdf"
+abcm2ps -j 0 -L1 -O $PS_OUT $TMP_FILE &amp;&amp; \
+gs -q -dNOPAUSE -sDEVICE=pdfwrite -dBATCH -sOutputFile=$PDF_OUT $PS_OUT &amp;&amp; \
+echo "&lt;meta http-equiv=\"refresh\" content=\"0; tm-file://${PDF_OUT}\"&gt;"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Preview</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.abc</string>
+	<key>uuid</key>
+	<string>F7E3EF40-5581-43F8-9AFE-BC7921939714</string>
+</dict>
+</plist>
